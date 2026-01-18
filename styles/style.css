@@ -12,10 +12,12 @@
 :root{
             --primary-color: #ffffff;
             --secondary-color: #1A0B2E;
+            --action-color:#00FF88;
             --gredient_1:#F7E93F;
             --gredient_2:#FB09B4;
             --gredient_3:#9100F8;
             --regular-font-size: 1rem;
+            --p-text:rgba(255, 255, 255, .5)
         }
 .with_container{
     width: 90%;
@@ -25,6 +27,9 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
+}
+.flex_column{
+    flex-direction: column;
 }
 
 .bg_liner_gradient{
@@ -52,6 +57,14 @@ align-items: center;
     display: none;
 }
 
+.padding_bottom{
+    padding: 100px 0;
+}
+.title_h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
 
 /* different style  */
 body{
@@ -59,7 +72,7 @@ body{
     max-width: 1600px;
     margin: 0 auto;
     border: 1px solid var(--secondary-color);
-    height: 500px;
+   
 }
 nav{
     background-color: var(--secondary-color);
@@ -77,22 +90,85 @@ nav li a{
     
 }
 
+#about_container_section{
+    background-color: var(--secondary-color);
+    gap: 80px;
+
+}
+
+#about_content {
+    gap: 20px;
+    /* border: 1px solid var(--secondary-color); */
+}
+
+#about_content p{
+    width: 70%;
+    text-align: center;
+    color: var(--p-text) ;
+}
+
+#hr-border{
+    width: 90%;
+
+    background-color: var(--secondary-color);
+    
+}
+
+#hr-border hr{
+  border: 1px dashed rgba(255, 255, 255, .1);
+    
+}
+#about_data{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+#about_data aside h2{
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--action-color);
+}
+#about_data aside p{
+    color: var(--p-text) ;
+}
+
 
 @media screen and (max-width:576px){
     nav{
        padding: 20px 0;
-}
+    }
 
     #hambarg_icon{
         display: block;
         cursor: pointer;
     }
+    #about_content p{
+    width: 90%;
+    
+    }
+    #about_data{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }
+
+    .title_h3, #about_data aside h2{
+    font-weight: 800;
+    font-size: 30px;
+    
 }
+}
+
+
 
 @media screen and (min-width:576px) and (max-width:992px){
      #hambarg_icon{
         display: block;
     }
+     #about_data aside h2{
+    font-weight: 900;
+    font-size: 40px;
+    
+}
 }
 
 @media screen and (min-width:992px){
