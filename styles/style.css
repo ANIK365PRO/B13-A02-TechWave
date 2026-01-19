@@ -54,8 +54,10 @@ align-items: center;
     color: var(--primary-color);
 }
 
-.hidden{
-    display: none;
+.Subscribe{
+    background-color: transparent;
+    color: var(--action-color);
+    border: 1px solid var(--action-color);
 }
 
 .padding_bottom{
@@ -102,6 +104,51 @@ nav li a{
     color: var(--primary-color);
     font-weight: 500;
     
+}
+#banner_container{
+    background: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner_container div{
+    justify-content: center;
+    text-align: center;
+   
+}
+
+#banner_circle_bg{
+    background-image: url(../assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+
+}
+
+#banner_container h2{
+    padding-top: 40px;
+    padding-bottom: 8px;
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+#banner_container p{
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    color: var(--p-text);
+}
+
+.banner_content_button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    display: inline;
 }
 
 #about_container_section{
@@ -297,6 +344,14 @@ footer h1{
         cursor: pointer;
     }
 
+    #banner_circle_bg{
+    height:300px;
+    width: 300px;
+    }
+    #banner_circle_bg img{
+    height: 160px;
+    width: 100px;
+    }
     .padding_bottom, #why_choose_container,#Featured_container{
         padding: 40px 0;
     }
