@@ -110,6 +110,8 @@ nav li a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 #banner_container div{
@@ -126,7 +128,18 @@ nav li a{
     height: 350px;
     width: 350px;
     justify-content: center;
+    position: relative;
 
+}
+#banner_circle_bg .new_btn{
+    border: none;
+    border-radius: 40px;
+    padding: 8px 16px;
+    background-color: var(--action-color);
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 30px;
 }
 
 #banner_container h2{
@@ -352,7 +365,10 @@ footer h1{
     height: 160px;
     width: 100px;
     }
-    .padding_bottom, #why_choose_container,#Featured_container{
+    #banner_container h2{
+        font-size: 40px;
+    }
+    .padding_bottom, #why_choose_container,#Featured_container, #banner_container{
         padding: 40px 0;
     }
     #host_container_section {
