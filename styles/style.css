@@ -175,6 +175,24 @@ nav li a{
     color: var(--p-text);
 }
 
+.time_box{
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    gap: 8px;
+}
+.time_box img{
+    width: 20px;
+    height: 20px;
+}
+.time_box time{
+    color: var(--action-color);
+}
+
+#Featured_container{
+background-color: var(--secondary-color);
+padding: 100px 0;
+}
 
 @media screen and (max-width:576px){
     nav{
