@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
 
 }
@@ -74,6 +75,10 @@ h5{
     margin: 16px 0;
 }
 
+.hidden{
+    display: none;
+}
+
 /* different style  */
 body{
     background-color: lightgoldenrodyellow;
@@ -87,8 +92,9 @@ nav{
     color: var(--primary-color);
     padding: 30px 0;
 }
-nav h1{
+nav h1, footer h1{
     font-weight: 800;
+    font-size: 40px;
 }
 nav li a{
     text-decoration: none;
@@ -190,8 +196,21 @@ nav li a{
 }
 
 #Featured_container{
-background-color: var(--secondary-color);
-padding: 100px 0;
+    background-color: var(--secondary-color);
+    padding: 100px 0;
+}
+#Featured_container .cart-video{
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 24px;
+    overflow: hidden;
+   
+}
+
+#Featured_container .cart-video div{
+    padding: 24px;
+}
+#Featured_container .cart-video div p{
+    color: var(--p-text);
 }
 
 
@@ -204,6 +223,9 @@ padding: 100px 0;
     background: rgba(35, 14, 61, 1);
     padding: 40px;
     border-radius: 40px;
+}
+#host_content img{
+    width: 100%;
 }
 
 #host_content p{
@@ -230,6 +252,39 @@ padding: 100px 0;
 
 }
 
+footer{
+    width: 100%;
+    background: url(../assets/footer-bg.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+footer h1{
+    color: var(--primary-color);
+}
+
+#footer_content{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#footer_content ul, #footer_content p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 60px;
+     color: var(--p-text);
+}
+#footer_content ul li{
+    cursor: pointer;
+    list-style: none;
+    
+}
 
 
 @media screen and (max-width:576px){
@@ -240,6 +295,16 @@ padding: 100px 0;
     #hambarg_icon{
         display: block;
         cursor: pointer;
+    }
+
+    .padding_bottom, #why_choose_container,#Featured_container{
+        padding: 40px 0;
+    }
+    #host_container_section {
+        padding-top: 40px;
+    }
+    #about_container_section{
+        gap: 40px;
     }
     #about_content p{
     width: 90%;
@@ -279,6 +344,15 @@ padding: 100px 0;
 @media screen and (min-width:576px) and (max-width:992px){
      #hambarg_icon{
         display: block;
+    }
+    .padding_bottom, #why_choose_container, #Featured_container{
+        padding: 80px 0;
+    }
+    #host_container_section {
+        padding-top: 80px;
+    }
+    #about_container_section{
+        gap: 60px;
     }
      #about_data aside h2{
     font-weight: 900;
