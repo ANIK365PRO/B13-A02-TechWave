@@ -53,17 +53,20 @@ align-items: center;
     font-weight: 600;
     color: var(--primary-color);
 }
+.bg_liner_gradient:hover{
+     background:linear-gradient(to top right, #f7e83f70, #fb09b275, #9100f879);
+}
 
 .Subscribe{
     background-color: transparent;
     color: var(--action-color);
     border: 1px solid var(--action-color);
 }
-/* 
-.btn_hover_effect:hover{
-    font-size: 1.1em;
-    font-weight: 800;
-} */
+
+.Subscribe:hover{
+     color: #00ff8894;
+    border: 1px solid #00ff8894;
+}
 
 .padding_bottom{
     padding: 100px 0;
@@ -148,7 +151,9 @@ nav li a{
     top: 12px;
     right: 30px;
 }
-
+#banner_circle_bg .new_btn:hover{
+    background-color: #00ff8894;
+}
 #banner_container h2{
     padding-top: 40px;
     padding-bottom: 8px;
@@ -356,6 +361,50 @@ footer h1{
     
 }
 
+/* .card_box{
+    position: relative;
+}
+.cart-grid::after, .cart-grid::before{
+    content: "";
+    position: absolute;
+    height: calc(100%+6px);
+    width: calc(100%+6px);
+    top: -3px;
+    background: conic-gradient(from var(--angle), #d11149, #e68aff, #ff4800, #11ebff, #edff58, #d11149);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.cart-grid::before{
+    z-index: -2;
+    filter: blur(20px);
+    opacity: 0.7;
+}
+.cart-grid:hover::after{
+    animation: glowing-border 3.5s linear infinite; 
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 53deg;
+    inherits: false;
+}
+@keyframes glowing-border {
+    from{
+        --angle:53deg;
+    }to{
+        --angle:413deg;
+    }
+}
+.cart-grid:hover::before{
+    animation: blur-effect 3.5s linear infinite, glowing-border 3.5s linear infinite;
+}
+@keyframes blur-effect {
+    from{
+        filter: blur(20px);
+    }to{
+        filter: blur(19px);
+    }
+} */
 
 @media screen and (max-width:576px){
     nav{
